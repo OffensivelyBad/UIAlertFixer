@@ -10,7 +10,35 @@
 		298B32232034E3CD00C7D26B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298B32222034E3CD00C7D26B /* AppDelegate.swift */; };
 		298B32252034E3CD00C7D26B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 298B32242034E3CD00C7D26B /* Assets.xcassets */; };
 		298B32282034E3CD00C7D26B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 298B32262034E3CD00C7D26B /* MainMenu.xib */; };
+		298B32372034E91A00C7D26B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 298B32362034E91A00C7D26B /* Cocoa.framework */; };
+		298B323A2034E91A00C7D26B /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298B32392034E91A00C7D26B /* SourceEditorExtension.swift */; };
+		298B323C2034E91A00C7D26B /* SourceEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298B323B2034E91A00C7D26B /* SourceEditorCommand.swift */; };
+		298B32412034E91A00C7D26B /* AlertFixer.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 298B32342034E91A00C7D26B /* AlertFixer.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		298B323F2034E91A00C7D26B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 298B32172034E3CD00C7D26B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 298B32332034E91A00C7D26B;
+			remoteInfo = AlertFixer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		298B32452034E91A00C7D26B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				298B32412034E91A00C7D26B /* AlertFixer.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		298B321F2034E3CD00C7D26B /* UIAlertFixer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIAlertFixer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -19,6 +47,12 @@
 		298B32272034E3CD00C7D26B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		298B32292034E3CD00C7D26B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		298B322A2034E3CD00C7D26B /* UIAlertFixer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UIAlertFixer.entitlements; sourceTree = "<group>"; };
+		298B32342034E91A00C7D26B /* AlertFixer.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = AlertFixer.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		298B32362034E91A00C7D26B /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		298B32392034E91A00C7D26B /* SourceEditorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorExtension.swift; sourceTree = "<group>"; };
+		298B323B2034E91A00C7D26B /* SourceEditorCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorCommand.swift; sourceTree = "<group>"; };
+		298B323D2034E91A00C7D26B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		298B323E2034E91A00C7D26B /* AlertFixer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AlertFixer.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +63,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		298B32312034E91A00C7D26B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				298B32372034E91A00C7D26B /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -36,6 +78,8 @@
 			isa = PBXGroup;
 			children = (
 				298B32212034E3CD00C7D26B /* UIAlertFixer */,
+				298B32382034E91A00C7D26B /* AlertFixer */,
+				298B32352034E91A00C7D26B /* Frameworks */,
 				298B32202034E3CD00C7D26B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				298B321F2034E3CD00C7D26B /* UIAlertFixer.app */,
+				298B32342034E91A00C7D26B /* AlertFixer.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,6 +105,25 @@
 			path = UIAlertFixer;
 			sourceTree = "<group>";
 		};
+		298B32352034E91A00C7D26B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				298B32362034E91A00C7D26B /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		298B32382034E91A00C7D26B /* AlertFixer */ = {
+			isa = PBXGroup;
+			children = (
+				298B32392034E91A00C7D26B /* SourceEditorExtension.swift */,
+				298B323B2034E91A00C7D26B /* SourceEditorCommand.swift */,
+				298B323D2034E91A00C7D26B /* Info.plist */,
+				298B323E2034E91A00C7D26B /* AlertFixer.entitlements */,
+			);
+			path = AlertFixer;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -70,15 +134,34 @@
 				298B321B2034E3CD00C7D26B /* Sources */,
 				298B321C2034E3CD00C7D26B /* Frameworks */,
 				298B321D2034E3CD00C7D26B /* Resources */,
+				298B32452034E91A00C7D26B /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				298B32402034E91A00C7D26B /* PBXTargetDependency */,
 			);
 			name = UIAlertFixer;
 			productName = UIAlertFixer;
 			productReference = 298B321F2034E3CD00C7D26B /* UIAlertFixer.app */;
 			productType = "com.apple.product-type.application";
+		};
+		298B32332034E91A00C7D26B /* AlertFixer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 298B32422034E91A00C7D26B /* Build configuration list for PBXNativeTarget "AlertFixer" */;
+			buildPhases = (
+				298B32302034E91A00C7D26B /* Sources */,
+				298B32312034E91A00C7D26B /* Frameworks */,
+				298B32322034E91A00C7D26B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AlertFixer;
+			productName = AlertFixer;
+			productReference = 298B32342034E91A00C7D26B /* AlertFixer.appex */;
+			productType = "com.apple.product-type.xcode-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -91,6 +174,10 @@
 				ORGANIZATIONNAME = "Shawn Roller";
 				TargetAttributes = {
 					298B321E2034E3CD00C7D26B = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					298B32332034E91A00C7D26B = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
@@ -110,6 +197,7 @@
 			projectRoot = "";
 			targets = (
 				298B321E2034E3CD00C7D26B /* UIAlertFixer */,
+				298B32332034E91A00C7D26B /* AlertFixer */,
 			);
 		};
 /* End PBXProject section */
@@ -124,6 +212,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		298B32322034E91A00C7D26B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -135,7 +230,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		298B32302034E91A00C7D26B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				298B323A2034E91A00C7D26B /* SourceEditorExtension.swift in Sources */,
+				298B323C2034E91A00C7D26B /* SourceEditorCommand.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		298B32402034E91A00C7D26B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 298B32332034E91A00C7D26B /* AlertFixer */;
+			targetProxy = 298B323F2034E91A00C7D26B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		298B32262034E3CD00C7D26B /* MainMenu.xib */ = {
@@ -258,6 +370,7 @@
 		298B322E2034E3CD00C7D26B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = UIAlertFixer/UIAlertFixer.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -274,6 +387,7 @@
 		298B322F2034E3CD00C7D26B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = UIAlertFixer/UIAlertFixer.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -283,6 +397,38 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.offensively-bad.UIAlertFixer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		298B32432034E91A00C7D26B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = AlertFixer/AlertFixer.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = EWH85CQYYJ;
+				INFOPLIST_FILE = AlertFixer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.offensively-bad.UIAlertFixer.AlertFixer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		298B32442034E91A00C7D26B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = AlertFixer/AlertFixer.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = EWH85CQYYJ;
+				INFOPLIST_FILE = AlertFixer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.offensively-bad.UIAlertFixer.AlertFixer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
@@ -304,6 +450,15 @@
 			buildConfigurations = (
 				298B322E2034E3CD00C7D26B /* Debug */,
 				298B322F2034E3CD00C7D26B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		298B32422034E91A00C7D26B /* Build configuration list for PBXNativeTarget "AlertFixer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				298B32432034E91A00C7D26B /* Debug */,
+				298B32442034E91A00C7D26B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
